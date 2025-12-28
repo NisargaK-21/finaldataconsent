@@ -35,6 +35,7 @@ export default function RootLayout({ children }) {
               <Link href="/" className="hover:text-white transition-colors">Dashboard</Link>
               <Link href="/protocol" className="hover:text-white transition-colors">Protocol</Link>
               <Link href="/governance" className="hover:text-white transition-colors">Governance</Link>
+              <Link href="/audit" className="hover:text-white transition-colors">Audit</Link>
             </div>
             <button className="bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-bold py-2 px-4 rounded-lg transition-all">
               Launch App

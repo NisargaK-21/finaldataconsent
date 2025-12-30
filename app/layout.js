@@ -20,22 +20,25 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className="dark">
+    <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#020617] text-slate-100`}
+        className={`
+          ${geistSans.variable} ${geistMono.variable}
+          antialiased
+          bg-white text-slate-900
+        `}
       >
 
-        <nav className="border-b border-slate-800 bg-slate-900/50 backdrop-blur-md sticky top-0 z-50">
+        <nav className="sticky top-0 z-50 bg-[#020617] border-b border-slate-800">
           <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-
             <div className="flex items-center gap-2">
               <ShieldCheck className="text-indigo-500" size={24} />
-              <span className="font-black text-xl tracking-tight">
+              <span className="font-black text-xl tracking-tight text-white">
                 DataConsent
               </span>
             </div>
 
-            <div className="hidden md:flex gap-8 text-sm font-medium text-slate-400">
+            <div className="hidden md:flex gap-8 text-sm font-medium text-slate-300">
               <Link href="/" className="hover:text-white">Dashboard</Link>
               <Link href="/protocol" className="hover:text-white">Protocol</Link>
               <Link href="/governance" className="hover:text-white">Governance</Link>
@@ -47,7 +50,7 @@ export default function RootLayout({ children }) {
                 <Menu className="text-white" />
               </summary>
 
-              <div className="absolute right-0 mt-3 w-48 rounded-lg border border-slate-800 bg-slate-950 shadow-lg p-4 space-y-3 text-sm">
+              <div className="absolute right-0 mt-3 w-48 rounded-lg border border-slate-800 bg-slate-950 shadow-lg p-4 space-y-3 text-sm text-slate-300">
                 <Link href="/" className="block hover:text-indigo-400">Dashboard</Link>
                 <Link href="/protocol" className="block hover:text-indigo-400">Protocol</Link>
                 <Link href="/governance" className="block hover:text-indigo-400">Governance</Link>
@@ -57,19 +60,22 @@ export default function RootLayout({ children }) {
           </div>
         </nav>
 
-        <main className="min-h-screen">
+        <main className="min-h-screen bg-white text-slate-900">
           {children}
         </main>
 
-        <footer className="border-t border-slate-800 bg-slate-950/50 py-12">
+
+        <footer className="bg-[#020617] border-t border-slate-800 py-12">
           <div className="max-w-7xl mx-auto px-6">
             <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
               <div className="md:col-span-2">
                 <div className="flex items-center gap-2 mb-4">
                   <ShieldCheck className="text-indigo-500" size={28} />
-                  <span className="font-black text-2xl">DataConsent</span>
+                  <span className="font-black text-2xl text-white">
+                    DataConsent
+                  </span>
                 </div>
-                <p className="text-slate-500 text-sm max-w-sm leading-relaxed">
+                <p className="text-slate-400 text-sm max-w-sm leading-relaxed">
                   The world’s first open-source privacy layer for the decentralized web.
                   Built so users — not platforms — own their digital identity.
                 </p>
@@ -77,7 +83,7 @@ export default function RootLayout({ children }) {
 
               <div>
                 <h4 className="font-bold text-white mb-4">Resources</h4>
-                <ul className="text-slate-500 text-sm space-y-2">
+                <ul className="text-slate-400 text-sm space-y-2">
                   <li className="hover:text-indigo-400 cursor-pointer">Smart Contracts</li>
                   <li className="hover:text-indigo-400 cursor-pointer">Developer Docs</li>
                   <li className="hover:text-indigo-400 cursor-pointer">API Reference</li>
@@ -94,11 +100,11 @@ export default function RootLayout({ children }) {
               </div>
             </div>
 
-            <div className="pt-8 border-t border-slate-900 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-600 font-mono">
+            <div className="pt-8 border-t border-slate-900 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-500 font-mono">
               <p>© 2025 DATACONSENT PROTOCOL. DEPLOYED ON SEPOLIA.</p>
               <div className="flex gap-4">
-                <span>PRIVACY POLICY</span>
-                <span>TERMS OF SERVICE</span>
+                <span className="hover:text-indigo-400 cursor-pointer">PRIVACY POLICY</span>
+                <span className="hover:text-indigo-400 cursor-pointer">TERMS OF SERVICE</span>
               </div>
             </div>
           </div>

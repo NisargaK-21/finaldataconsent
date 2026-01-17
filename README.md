@@ -4,7 +4,7 @@
 
 DataConsent is a modern, open-source Web3 privacy protocol that empowers users to own and govern their personal data. Using blockchain technology and smart contracts, DataConsent allows individuals to revoke third-party access to private information with cryptographic immutability — without reliance on any central authority.
 
-**[🚀 Live Demo](https://finaldataconsent.vercel.app/)** | **[📖 Documentation](https://finaldataconsent.vercel.app/protocol)** | **[🏛️ Governance](https://finaldataconsent.vercel.app/governance)**
+**[🚀 Live Demo](https://finaldataconsent.vercel.app/)** 
 
 ---
 
@@ -68,19 +68,19 @@ In today's digital ecosystem, your personal data is continuously harvested, sold
 ┌─────────────────────────────────────────────────┐
 │  User Browser (Zero-Trust Environment)          │
 ├─────────────────────────────────────────────────┤
-│  1. User connects MetaMask wallet                │
-│  2. Signs privacy preference locally             │
-│  3. Ethers.js encodes transaction                │
+│  1. User connects MetaMask wallet               │
+│  2. Signs privacy preference locally            │
+│  3. Ethers.js encodes transaction               │
 └──────────────────┬──────────────────────────────┘
                    │
                    ▼
 ┌─────────────────────────────────────────────────┐
 │  Ethereum Sepolia Testnet                       │
 ├─────────────────────────────────────────────────┤
-│  Smart Contract receives revocation              │
+│  Smart Contract receives revocation             │
 │  - Invalidates third-party access               │
-│  - Emits immutable log event                     │
-│  - Updates user's privacy state                  │
+│  - Emits immutable log event                    │
+│  - Updates user's privacy state                 │
 └─────────────────────────────────────────────────┘
 ```
 
@@ -310,5 +310,3 @@ This project is licensed under the **MIT License** — see the [LICENSE](./LICEN
 ---
 
 **DataConsent: Your Data, Your Rules, Your Privacy. 🔐**
-
-**[Visit Live Demo →](https://finaldataconsent.vercel.app/)**

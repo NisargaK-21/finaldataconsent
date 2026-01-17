@@ -296,10 +296,7 @@ This project is licensed under the **MIT License** — see the [LICENSE](./LICEN
 
 ## 📧 Support & Community
 
-- **Discord** — Join our community server (coming soon)
-- **Twitter** — [@DataConsent](https://twitter.com/dataconsent)
 - **GitHub Issues** — Report bugs or request features
-- **Email** — contact@dataconsent.io
 
 ---
 

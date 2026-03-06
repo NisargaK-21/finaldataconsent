@@ -286,11 +286,6 @@ DataConsent is built with privacy and security as first-class concerns:
 
 ⚠️ **Important**: This is a testnet application. Do not use with real assets or sensitive data.
 
----
-
-## 📄 License
-
-This project is licensed under the **MIT License** — see the [LICENSE](./LICENSE) file for details.
 
 ---
 
